@@ -10,7 +10,7 @@ html {
 }
 
 a {
-    color: black;
+    color: #040405;
     text-decoration: none;
 }
 
@@ -20,6 +20,7 @@ li {
 
 .flex {
     display: flex;
+    flex-wrap: wrap;
 }
 
 body {
@@ -33,6 +34,34 @@ body {
     margin-left: auto;
     margin-right: auto;
     padding: 10px;
+}
+
+h1 {
+    font-size: 44.21px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bolder;
+}
+
+h3 {
+    font-size: 14.74px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bolder;
+    text-transform: uppercase;
+}
+
+.M {
+    font-size: 13.26px;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;;
+    font-weight: normal;
+    color: rgba(4, 4, 5, 0.5);
+    line-height: 23.58px;
+}
+
+.S {
+    font-size: 10.32px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bolder;
+    text-transform: uppercase;
 }
 
 /* --> Header (start) <-- */
@@ -102,11 +131,15 @@ header {
 a.btn {
     display: inline-block;
     font-size: 10.32px;
+    font-weight: bolder;
     text-transform: uppercase;
     padding: 15px 24px;
     background-color: #ffe26d;
     border: 1px solid #ffe26d;
     border-radius: 3px;
+}
+
+header div div a.btn {
     margin-bottom: 250px;
     margin-left: 5px;
 }
@@ -122,4 +155,102 @@ a.btn:active {
 
 /* --> Section WELCOME (start) <-- */
 
+.circle {
+    height: 80px;
+    width: 80px;
+    background-color: #62497c; 
+    border: 1px solid #62497c;
+    border-radius: 50%;
+    margin: 15px;
+}
 
+.circle img.icon {
+    position: relative;
+    height: auto;
+    width: auto;
+}
+
+.circle .bell {
+    top: 20px;
+    left: 0px;
+}
+
+.circle .envelop {
+    top: 25px;
+    left: 0px;
+}
+
+.circle .drawer {
+    top: 23px;
+    left: 0px;
+}
+
+.welcome {
+    color: #040405;
+    background-color: #ffffff;
+}
+
+.welcome .container h1 {
+    text-align: center;
+    margin-top: 65px;
+}
+
+.welcome>div>.flex>p {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+    font-size: 29.47px;
+    width: 450px;
+    padding-top: 15px;
+}
+
+.welcome>.container>.flex>img {
+   padding-right: 25px;
+}
+
+.welcome .container .flex {
+    /* align-items: stretch; */
+    justify-content: space-between;
+    margin-top: 55px;
+}
+
+.welcome .container .flex .columns {
+    flex: 1 100%;
+    margin-top: 50px;
+}
+
+  [class^='col-'] > a {
+      display: block;
+      width: 75px;
+      margin-top: 30px;
+  }
+
+  [class^='col-'] > h3 {
+    margin-bottom: 18px;
+    margin-top: 28px;
+    color: #62497c
+  }
+
+  [class^='col-'] > * {
+      text-align: center;
+      margin-left: auto;
+      margin-right: auto;
+  }
+
+[class^='col-'] {
+    width: 170px;
+}
+
+/* --> Section WELCOME (end) <-- */
+
+
+.border {
+    border: 15px dashed rgba(0, 128, 0, 0.5);
+}
+
+.border-red {
+    border: 10px dashed rgba(201, 9, 25, 0.5);
+}
+
+.border-pink {
+    border: 5px dashed rgba(233, 34, 150, 0.5);
+}
