@@ -208,7 +208,6 @@ a.btn:active {
 }
 
 .welcome .container .flex {
-    /* align-items: stretch; */
     justify-content: space-between;
     margin-top: 55px;
 }
@@ -241,7 +240,7 @@ a.btn:active {
 }
 
 .hr {
-    border-bottom: 2px solid rgb(98, 73, 124, 0.5);
+    border-bottom: 2px solid rgba(98, 73, 124, 0.5);
     opacity: 0.502;
     width: 720px;   
     margin: 55px auto 38px;
@@ -297,6 +296,72 @@ a.btn:active {
 }
 
 /* --> Section Projects (end) <-- */
+
+/* --> Section Pricing (start) <-- */
+
+.pricing {
+    color: #040405;
+    background-color: #ffffff;
+}
+
+.pricing .flex {
+    /* justify-content: space-around; */
+    justify-content: space-evenly;
+}
+
+.pricing h1 {
+    text-align: center;
+    margin-top: 70px;
+    margin-bottom: 45px;
+}
+
+.pricing [class^='col-'] > h3:first-child {
+    color: #040405;
+    margin-top: 0;
+    margin-bottom: 0px;
+    /* text-align: center; */
+}
+
+.pricing [class^='col-'] > h3:nth-child(2) {
+    text-transform: capitalize;
+    opacity: 0.39;
+    color: #040405;
+    margin-top: 13px;
+    margin-bottom: 13px;
+}
+
+.pricing li {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    /* font-weight: normal; */
+    font-size: 10.32px;
+    line-height: 22.5px;
+    text-transform: none;
+}
+
+.pricing ul {
+    margin-bottom: 10px;
+}
+
+.pricing [class^='col-'] {
+    border-right: 2px solid rgba(231, 231, 231, 0.5);
+}
+  
+.pricing [class^='col-'] a.btn {
+    width: 40px;
+    height: 10px;
+    padding: 7px 19px;
+    margin-top: 18px;
+}
+
+/* --> Section Pricing (end) <-- */
+
+/* --> Section Video (start) <-- */
+
+
+
+/* --> Section Video (end) <-- */
+
+
 .border {
     border: 15px dashed rgba(0, 128, 0, 0.5);
 }
