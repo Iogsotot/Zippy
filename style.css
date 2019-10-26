@@ -77,7 +77,7 @@ header {
     font-family: 'Montserrat', sans-serif;
     font-weight: bolder;
     color: #ffffff;
-    background-image: url('/Imgs/header-bg.png');
+    background-image: url('Imgs/header-bg.png');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: bottom;
@@ -272,37 +272,37 @@ a.btn:active {
     flex-wrap: nowrap;
 }
 
-.img-box {
+.projects .img-box {
     margin-bottom: 40px;
 }
 
-[class^='slide-'] {
+.projects [class^='slide-'] {
     flex: 0 0 0;
     width: 350px;
     height: 725px;
     background-color: #efefef;
 }
 
-[class^='slide-']:nth-child(even) {
+.projects [class^='slide-']:nth-child(even) {
     background-color: #e4e4e4;
 }
 
-[class^='slide-']:hover {
+.projects [class^='slide-']:hover {
     transition: 0.2s;
     background-color: #ffe26d;
 }
 
-[class^='slide-']:hover a.btn {
+.projects [class^='slide-']:hover a.btn {
     transition: 0.25s;
     background-color: #62497c;
     color: #efefef;
 }
 
-[class^='slide-'] > h3, [class^='slide-'] > p {
+.projects [class^='slide-'] > h3, [class^='slide-'] > p {
     padding: 0px 20px 10px 50px;
 }
 
-[class^='slide-'] > a {
+.projects [class^='slide-'] > a {
     margin-left: 50px;
 }
 
@@ -398,7 +398,7 @@ video {
 .showcase::after {
     content: "";
     background-size: auto;
-    background-image: url(/Imgs/Play_Icon.png);
+    background-image: url(Imgs/Play_Icon.png);
     background-position: center center;
     background-repeat: no-repeat;
     position: absolute;
@@ -413,7 +413,7 @@ video {
     content: "";
     background-color: rgba(0, 0, 0, 0.7);
     background-size: auto;
-    background-image: url(/Imgs/Play_Icon.png);
+    background-image: url(Imgs/Play_Icon.png);
     background-position: center center;
     background-repeat: no-repeat;
     position: absolute;
@@ -502,21 +502,119 @@ video {
     margin-right: 10px;
 }
 
-.member:hover .member-foto>img{
+.member .foto-circle:hover .member-foto>img{
     opacity: 0.2;
     transition: opacity 0.15s linear;
 }
 
-.member:hover .foto-circle {
+.member .foto-circle:hover  {
     background-color: #62497c;
     transition: background-color 0.15s linear;
 }
 
-.member:hover .soc-btn {
+.member .foto-circle:hover .soc-btn {
     opacity: 1;
    }
 
 /* --> Section Team (end) <-- */
+
+/* --> Section Life-fotos (start) <-- */
+
+.life-fotos {
+    color: #040405;
+    background-color: #efefef ;
+}
+
+.life-fotos h1 {
+    text-align: center;
+    width: 700px;
+    margin-bottom: 40px;
+    padding-top: 60px;
+}
+
+.life-fotos .big-foto {
+    text-align: center;
+    background-color: #2a2a2a;
+    height: 425px;
+    width: 700px;
+    margin-bottom: 15px;
+}
+
+.life-fotos .big-foto>img {
+    width: 700px;
+    height: 425px;
+    object-fit: cover;
+}
+
+.life-fotos .slider {
+    width: 700px;
+}
+
+.life-fotos .thumbnails {
+    flex-wrap: nowrap;
+    overflow: hidden;
+    width: 610px;
+}
+
+.life-fotos .slider [class^='slide-'] {
+    width: 110px;
+    height: 68px;
+    margin-right: 15px;
+}
+
+.life-fotos .slider .life-foto {
+    width: 110px;
+    height: 68px;
+    object-fit: cover;
+}
+
+.life-fotos .slider [class*='-arrow'] {
+    display: flex;
+    height: 66px;
+    width: 28px;
+    background-color: #2a2a2a;
+    border: 1px solid #2a2a2a;
+    justify-content: center;
+}
+
+.life-fotos .slider .left-arrow {
+    margin-right: 15px;
+}
+
+.life-fotos .slider .right-arrow {
+    margin-left: 15px;
+}
+
+.life-fotos .slider .right-arrow>.arrow {
+    margin-right: 2px;
+}
+
+.life-fotos .slider .left-arrow>.arrow {
+    margin-left: 2px;
+    transform: rotate(-45deg);
+}
+
+.life-fotos .arrow {
+    align-self: center;
+    
+    height: 8px;
+    width: 8px;
+
+    border: 2px solid #ffffff;
+    border-right: none;
+    border-bottom: none;
+ 
+    transform: rotate(135deg);
+}
+
+
+.life-fotos .slider [class*='-arrow']:hover {
+    transition: 0.2s;
+    border-color: #62497c;
+    background-color: #62497c;
+}
+
+/* --> Section Life-fotos (end) <-- */
 
 .border {
     border: 15px dashed rgba(0, 128, 0, 0.5);
