@@ -537,8 +537,7 @@ video {
     background-color: #2a2a2a;
     height: 425px;
     width: 700px;
-    margin-bottom: 15px;
-}
+   }
 
 .life-fotos .big-foto>img {
     width: 700px;
@@ -548,18 +547,25 @@ video {
 
 .life-fotos .slider {
     width: 700px;
+    overflow: hidden;
+    padding-top: 15px;
 }
 
 .life-fotos .thumbnails {
     flex-wrap: nowrap;
-    overflow: hidden;
     width: 610px;
+    margin-bottom: 100px;
 }
 
 .life-fotos .slider [class^='slide-'] {
     width: 110px;
     height: 68px;
     margin-right: 15px;
+}
+
+.life-fotos .thumbnails [class^='slide-']:hover > img {
+    transform: scale(1.2);
+    transition: linear 0.15s;
 }
 
 .life-fotos .slider .life-foto {
@@ -607,7 +613,6 @@ video {
     transform: rotate(135deg);
 }
 
-
 .life-fotos .slider [class*='-arrow']:hover {
     transition: 0.2s;
     border-color: #62497c;
@@ -615,6 +620,61 @@ video {
 }
 
 /* --> Section Life-fotos (end) <-- */
+
+/* --> Section Spam (start) <-- */
+
+.spam {
+    background-color: #292929;
+    background-image: url('Imgs/spam-bg.jpg');
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: cover;
+    text-align: center;
+}
+
+.spam h1 {
+    font-family: 'Montserrat', sans-serif;
+    /* text-align: center; */
+    margin-top: 50px;
+    margin-bottom: 25px;
+}
+
+.spam .input-group {
+    position: relative;
+    margin-bottom: 250px;
+    width: 545px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.spam input {
+    position: absolute;
+    top: 1px;
+    left: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 19.16px;
+
+    width: 400px;
+    border: 1px solid #fefefe;
+    border-radius: 2px; 
+    outline: none;
+    box-shadow: 0 0 1px 1px #fefefe;
+    font-weight: normal;
+    margin: 0;
+
+    padding: 15px 0px 16px 15px;
+}
+
+.spam a.btn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    border: none;
+    border-radius: 0 2px 2px 0;
+    padding: 23px 45px;
+}
+
+/* --> Section Spam (end) <-- */
 
 .border {
     border: 15px dashed rgba(0, 128, 0, 0.5);
