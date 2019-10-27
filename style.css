@@ -747,13 +747,93 @@ video {
 
 .contact {
     background-color: #ffe26d;
+    color: #040405;
+    text-align: left;
+}
+
+.contact input, .contact textarea {
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 19px;
+    padding-left: 15px;
+    border: none;
+    width: 100%;
+}
+
+.contact .form-group {
+    padding-right: 15px;
+}
+
+.contact .flex {
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    flex-wrap: nowrap;
+}
+
+.contact .flex > div {
+    width: 50%;
+}
+
+.contact .map {
+    height: 100%;
+}
+
+.contact .map iframe {
+    width: 100%;
+    height: 100%;
+}
+
+.contact form {
+    max-width: 299px;
+}
+
+.contact form {
+    padding-left: 41px;
+    padding-right: 20px;
+}
+
+.contact h1 {
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+.contact textarea {
+    overflow: hidden;
+    margin-bottom: 15px;
+    resize: none; 
+}
+
+.contact input:not([type=button]),
+.contact textarea {
+    outline-color: #62497c;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 19.16px;
+    line-height: 42px;
+}
+
+input[type=button] {
+    margin-bottom: 50px;
+    padding: 15px;
+    background-color: #62497c;
+    color: #fefefe;
+    border: 1px solid #ffe26d;
+}
+
+input[type=button]:hover {
+    transition: border 0.2s;
+    border: 1px solid #62497c;
 }
 
 /* --> Section Contact (end) <-- */
 
+/* --> Section Footer (start) <-- */
 
 
-/* .border {
+
+/* --> Section Footer (end) <-- */
+
+.border {
     border: 15px dashed rgba(0, 128, 0, 0.5);
 }
 
@@ -763,5 +843,5 @@ video {
 
 .border-pink {
     border: 5px dashed rgba(233, 34, 150, 0.5);
-} */
+}
 
