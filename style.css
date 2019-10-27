@@ -496,6 +496,10 @@ video {
     opacity: 0;
 }
 
+.soc-btn img {
+    max-width: 32px;
+}
+
 .soc-btn>a {
     display: inline-block;
     margin-left: 10px;
@@ -829,19 +833,102 @@ input[type=button]:hover {
 
 /* --> Section Footer (start) <-- */
 
+footer {
+    color: #040405;
+    font-size: 13.26px;
+    background-color: #fefefe;
+    text-align: center;
+}
 
+/* footer li,
+footer ul {
+    display: block;
+    padding: 0;
+    margin: 0;
+} */
 
+footer .footer-nav-item  li {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-weight: normal;
+    text-transform: none;
+    font-size: 13.26px;
+}
+
+footer .flex {
+    flex-wrap: nowrap;
+    justify-content: center;
+}
+
+footer .flex .footer-nav-item:not(:last-child) {
+    margin-right: 100px;
+}
+
+footer .flex .footer-nav-item {
+    margin-top: 70px;
+    margin-bottom: 100px;
+}
+
+footer .flex .footer-nav-item > ul {
+    margin-top: 20px;
+}
+
+footer .flex .footer-nav-item > ul li {
+   /* madjick! this style is very important for li:hover */
+    margin-top: 6px;
+    padding-top: 1px;
+    /* padding-bottom: 2px; */
+}
+
+footer .footer-icon {
+    fill: #040405;
+    fill-rule: evenodd;
+}
+
+footer li>[class*="-icon"]{
+    display: inline-block;
+    width: 25px;
+    height: 16px;
+    padding: 8px 5px 0;
+}
+
+footer .facebook-icon,
+footer .behance-icon {
+    text-align: left;
+}
+
+footer .tumbler-icon,
+footer .linkedin-icon {
+    text-align: right;
+}
+
+footer a:hover .footer-icon{
+    fill: #62497c;
+}
+
+footer .footer-nav-item:not(:nth-child(2)) >ul >li {
+    position: relative;
+}
+
+footer .footer-nav-item:not(:nth-child(2)) >ul >li:hover {
+    color: #62497c;
+    transition: 0.3s;
+}
+  
+footer .footer-nav-item:not(:nth-child(2)) >ul >li::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    width: 100%;
+    height: 1px;
+    background-color: #62497c;
+    transform-origin: center;
+    transform: translate(-50%, 0) scaleX(0);
+    transition: transform 0.3s ease-in-out;
+  }
+  
+footer .footer-nav-item:not(:nth-child(2)) >ul >li:hover::before {
+    transform: translate(-50%, 0) scaleX(1);
+  }
+  
 /* --> Section Footer (end) <-- */
-
-.border {
-    border: 15px dashed rgba(0, 128, 0, 0.5);
-}
-
-.border-red {
-    border: 10px dashed rgba(201, 9, 25, 0.5);
-}
-
-.border-pink {
-    border: 5px dashed rgba(233, 34, 150, 0.5);
-}
-
