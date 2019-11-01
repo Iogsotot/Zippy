@@ -118,21 +118,21 @@ header {
     padding-right: 25px;
 }
 
-.text {
+header .text {
     width: 500px;
     margin-top: 80px;
 }
 
-.text h1 {
+header .text h1 {
     font-size: 40.69px;
 }
 
-.text p {
+header .text p {
     font-family: 'Roboto', sans-serif;
     font-weight: 100;
     font-size: 19.16px;
     margin-top: 30px;
-    margin-bottom: 35px;
+    margin-bottom: 33px;
 }
 
 a.btn {
@@ -147,7 +147,7 @@ a.btn {
 }
 
 header div div a.btn {
-    margin-bottom: 250px;
+    margin-bottom: 208px;
     margin-left: 5px;
 }
 
@@ -157,6 +157,46 @@ a.btn:active {
     background-color: #62497c;
     border-color: #62497c;
     color: #ffffff;
+}
+
+.hidden {
+    display: none; 
+}
+
+header [class^="dot-"] {
+    display: inline-block;
+    cursor: pointer;
+    width: 5px;
+    height: 5px;
+    background-color: #ffffff;
+    border: 1px solid #ffffff;
+    border-radius: 50%;
+    opacity: .5;
+    margin-right:3px;
+}
+
+header .dots {
+    margin: 0px 0px 20px 0;
+}
+
+header input[type="radio"] {
+    display:none; 
+}
+
+header [class^="dot-"]:hover {
+    /* opacity: 1; */
+    transition: 0.2s;
+    box-shadow: 0px 0px 1px 2px #ffffff;
+}
+
+header [class^="dot-"]:active {
+        opacity: 1;
+        transition: 0.2s;
+}
+
+header input:checked  + label {
+    background-color: red;
+    opacity: 1;
 }
 
 /* --> Header (end) <-- */
@@ -298,7 +338,7 @@ a.btn:active {
     color: #efefef;
 }
 
-.projects [class^='slide-'] > h3, [class^='slide-'] > p {
+.projects>.slider>[class^='slide-'] > h3, .projects>.slider> [class^='slide-'] > p {
     padding: 0px 20px 10px 50px;
 }
 
