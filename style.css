@@ -44,12 +44,14 @@ body {
 }
 
 h1 {
+    cursor: default;
     font-size: 44.21px;
     font-family: 'Montserrat', sans-serif;
     font-weight: bolder;
 }
 
 h3 {
+    cursor: default;
     font-size: 14.74px;
     font-family: 'Montserrat', sans-serif;
     font-weight: bolder;
@@ -57,6 +59,7 @@ h3 {
 }
 
 .M {
+    cursor: default;
     font-size: 13.26px;
     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;;
     font-weight: normal;
@@ -65,10 +68,15 @@ h3 {
 }
 
 .S {
+    cursor: default;
     font-size: 10.32px;
     font-family: 'Montserrat', sans-serif;
     font-weight: bolder;
     text-transform: uppercase;
+}
+
+p {
+    cursor: default;
 }
 
 /* --> Header (start) <-- */
@@ -91,6 +99,7 @@ header {
 }
 
 .logo {
+    cursor: default;
     font-size: 29.47px;
     text-transform: uppercase;
     margin-right: 20px;
@@ -124,10 +133,12 @@ header .text {
 }
 
 header .text h1 {
+    cursor: default;
     font-size: 40.69px;
 }
 
 header .text p {
+    cursor: default;
     font-family: 'Roboto', sans-serif;
     font-weight: 100;
     font-size: 19.16px;
@@ -176,6 +187,7 @@ header [class^="dot-"] {
 }
 
 header .dots {
+    cursor: default;
     margin: 0px 0px 20px 0;
 }
 
@@ -568,6 +580,7 @@ video {
 .life-fotos {
     color: #040405;
     background-color: #efefef ;
+    
 }
 
 .life-fotos h1 {
@@ -615,12 +628,14 @@ video {
 }
 
 .life-fotos .slider .life-foto {
+    cursor: pointer;
     width: 110px;
     height: 68px;
     object-fit: cover;
 }
 
 .life-fotos .slider [class*='-arrow'] {
+    cursor: pointer;
     display: flex;
     height: 66px;
     width: 28px;
@@ -715,6 +730,7 @@ video {
 }
 
 .spam a.btn {
+    cursor: pointer;
     position: absolute;
     top: 0;
     right: 0px;
@@ -862,6 +878,7 @@ video {
 }
 
 input[type=button] {
+    cursor: pointer;
     margin-bottom: 50px;
     padding: 15px;
     background-color: #62497c;
@@ -951,6 +968,7 @@ footer a:hover .footer-icon{
 }
 
 footer .footer-nav-item:not(:nth-child(2)) >ul >li {
+    cursor: pointer;
     position: relative;
 }
 
