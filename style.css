@@ -395,6 +395,7 @@ header input:checked  + label {
 
 .pricing [class^='col-'] {
     border-right: 2px solid rgba(231, 231, 231, 0.5);
+    padding-right: 27px;
 }
   
 .pricing [class^='col-'] a.btn {
@@ -689,6 +690,7 @@ video {
     width: 545px;
     margin-right: auto;
     margin-left: auto;
+    background-color: #efefef;
 }
 
 .spam input {
@@ -697,22 +699,24 @@ video {
     left: 0;
     font-family: 'Montserrat', sans-serif;
     font-size: 19.16px;
-
-    width: 400px;
+    width: 394px;
     border: 1px solid #fefefe;
     border-radius: 2px; 
     outline: none;
     box-shadow: 0 0 1px 1px #fefefe;
     font-weight: normal;
     margin: 0;
-
     padding: 15px 0px 16px 15px;
+}
+
+.spam input:invalid {
+    box-shadow: 0 0 2px 2px #ff5252af;
 }
 
 .spam a.btn {
     position: absolute;
     top: 0;
-    right: 0;
+    right: 0px;
     border: none;
     border-radius: 0 2px 2px 0;
     padding: 23px 45px;
