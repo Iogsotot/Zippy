@@ -129,7 +129,7 @@ header {
 
 header .text {
     width: 500px;
-    margin-top: 80px;
+    margin-top: 65px;
 }
 
 header .text h1 {
@@ -180,9 +180,9 @@ header .sliders__block {
 }
 
 header .slider__btn {
-    margin-bottom: 58px;
+    margin-bottom: 248px;
     margin-left: 5px;
-    margin-top: 220px;
+    margin-top: 207px;
 }
 
 header .slider__item {
@@ -202,7 +202,7 @@ header .slider__radio:nth-of-type(4):checked ~ .slider__item:nth-of-type(4){
 header .slider__dot {
     display: inline-block;
     position: relative;
-    top: 300px;
+    top: 476px;
     z-index: 10;
     cursor: pointer;
 
