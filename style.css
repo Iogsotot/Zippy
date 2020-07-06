@@ -157,11 +157,6 @@ a.btn {
     border-radius: 3px;
 }
 
-header div div a.btn {
-    margin-bottom: 208px;
-    margin-left: 5px;
-}
-
 a.btn:hover, 
 a.btn:active {
     transition: 0.3s;
@@ -170,47 +165,82 @@ a.btn:active {
     color: #ffffff;
 }
 
+/* slider Start */
+
 .hidden {
     display: none; 
 }
 
-header [class^="dot-"] {
+header  .slider {
+    position: relative;
+}
+
+header .sliders__block {
+    cursor: default;
+}
+
+header .slider__btn {
+    margin-bottom: 58px;
+    margin-left: 5px;
+    margin-top: 220px;
+}
+
+header .slider__item {
+    position: absolute;
+    opacity: 0;
+    transition: opacity .3s ease-in .3s;
+}
+
+header .slider__radio:nth-of-type(1):checked ~ .slider__item:nth-of-type(1),
+header .slider__radio:nth-of-type(2):checked ~ .slider__item:nth-of-type(2),
+header .slider__radio:nth-of-type(3):checked ~ .slider__item:nth-of-type(3),
+header .slider__radio:nth-of-type(4):checked ~ .slider__item:nth-of-type(4){
+    opacity: 1;
+    transition: opacity .3s ease-in .3s;
+}
+
+
+header .slider__dot {
     display: inline-block;
     cursor: pointer;
+
     width: 5px;
     height: 5px;
+
     background-color: #ffffff;
+
     border: 1px solid #ffffff;
     border-radius: 50%;
+
     opacity: .5;
+
     margin-right:3px;
 }
 
-header .dots {
+/* header .slider__dot-list{
     cursor: default;
     margin: 0px 0px 20px 0;
-}
+} */
 
-header input[type="radio"] {
+header .slider__radio {
     display:none; 
 }
 
-header [class^="dot-"]:hover {
-    /* opacity: 1; */
+header .slider__dot:hover {
     transition: 0.2s;
     box-shadow: 0px 0px 1px 2px #ffffff;
 }
 
-header [class^="dot-"]:active {
+header .slider__dot:active {
         opacity: 1;
         transition: 0.2s;
 }
 
-header input:checked  + label {
-    background-color: red;
+header .slider__radio:checked + label {
+    background-color: white;
     opacity: 1;
 }
-
+/* slider End */
 /* --> Header (end) <-- */
 
 /* --> Section WELCOME (start) <-- */
