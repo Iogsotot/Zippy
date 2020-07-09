@@ -458,8 +458,6 @@ section.video {
     background-color: #62497c;
 }
 
-/* video - это тег для вставки видео, 
-.video - это класс, обозначающий секцию "Video Projects" */
 video {
     object-fit: cover;
     width: 690px;
@@ -472,29 +470,33 @@ video {
     padding-top: 80px;
 }
 
-.video .slider {
-    position: relative;
+
+/* slider */
+
+.video__slider {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+
 }
 
-.video .slider__controls {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    
-    z-index: 11;
+.video__slider__items {
     display: flex;
-    align-items: stretch;
-    flex-wrap: nowrap;
-    justify-content: space-between;    
+    overflow: hidden;
+    justify-content: center;
 }
 
 .video .slider__control {
     font-size: 24px;
     font-weight: bold;
     line-height: 461px;
-    vertical-align: center;
+    height: 461px;
+    margin: 39px 0px 95px;
+    /* vertical-align: center; */
+    flex-shrink: 0;
     text-align: center;
+
     width: 50px;
     opacity: .8;
     background-color: rgba(0, 0, 0, 0.5);
@@ -508,7 +510,6 @@ video {
 
 .video .slider__control:hover {
     opacity: .9;
-    width: 100px;
     transition: all 250ms ease;
 }
 
@@ -517,22 +518,16 @@ video {
     transition: all 250ms ease;
 }
 
-.video .slider__controls:hover .slider__control--left {
-    box-shadow: 3px 0px 5px -3px rgba(255, 255, 255, .8);
-}
-
-.video .slider__controls:hover .slider__control--right {
-    box-shadow: -3px 0px 5px -3px rgba(255, 255, 255, .8);
-}
-
 .video .slider__item {
-    width: 690px;
+    max-width: 690px;
     margin: 39px 18px 95px;
 }
 
+/* Slider (end) */
+
 .video .showcase {
     position: relative;
-    width: 690px;
+    max-width: 690px;
     height: 461px;
    }
 
@@ -555,7 +550,6 @@ video {
     content: "";
     background-color: rgba(0, 0, 0, 0.7);
     background-size: auto;
-    /* background-image: url(imgs/play_icon.png); */
     background-position: center center;
     background-repeat: no-repeat;
     position: absolute;
@@ -577,13 +571,6 @@ video {
     padding-bottom: 20px;
     display: flex;
     justify-content: space-between;
-}
-
-
-
-.video .flex {
-    justify-content: center;
-    flex-wrap: nowrap;
 }
 /* --> Section Video (end) <-- */
 
