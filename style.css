@@ -514,7 +514,7 @@ video {
 }
 
 .video .slider__controls:hover .slider__control {
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: rgba(0, 0, 0, 0.5);
     transition: all 250ms ease;
 }
 
@@ -531,6 +531,7 @@ video {
     height: 461px;
    }
 
+/* значок запуска плеера */
 .video .showcase::after {
     content: "";
     cursor: pointer;
@@ -546,6 +547,13 @@ video {
     z-index: 10;
 }
 
+.video .showcase.none::after,
+.video .showcase.none::before {
+    content: none;
+    display: none;
+}
+
+/* затемнение видео */
 .video .showcase::before {
     content: "";
     background-color: rgba(0, 0, 0, 0.7);
