@@ -463,6 +463,19 @@ video {
     width: 690px;
     height: 461px;
     z-index: 1;
+    opacity: 1;
+    transition: all 300ms ease-in-out;
+    -webkit-transition: all 300ms ease-in-out; /* Safari and Chrome */
+    -moz-transition: all 300ms ease-in-out; /* Firefox 4 */
+    -o-transition: all 300ms ease-in-out; /* Opera */
+    }
+
+    .flash { 
+        opacity: .7; 
+        transition: all 300ms ease-in-out;
+        -webkit-transition: all 300ms ease-in-out; /* Safari and Chrome */
+        -moz-transition: all 300ms ease-in-out; /* Firefox 4 */
+        -o-transition: all 300ms ease-in-out; /* Opera */
     }
 
 .video>h1 {
@@ -472,13 +485,11 @@ video {
 
 
 /* slider */
-
 .video__slider {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
     justify-content: center;
-
 }
 
 .video__slider__items {
