@@ -21,6 +21,12 @@ prevSlide.onclick = function () {
 
 function sliding(direction) {
     for (let j = 0; j < totalSlides; j++) {
+        // мигание слайдера при переходе
+        slides[j].classList.add('flash');
+        setTimeout(function(){
+            slides[j].classList.remove('flash');
+            }, 350 );
+
         if (direction == 'prev') {
             slides[j].style.order++ ;
             if (slides[j].style.order > totalSlides) {
@@ -36,7 +42,7 @@ function sliding(direction) {
     }    
 }
 
-// воспроизведение видео по клику
+// воспроизведение и остановка видео по клику
 const videos = document.querySelectorAll('video');  
 let playBtnAreas = document.querySelectorAll('.video .slider__item');
 let showcases = document.querySelectorAll('.video .showcase');
@@ -52,6 +58,8 @@ for (let i = 0; i < playBtnAreas.length; i++) {
         }
     }
 }
+
+
 
 
 
