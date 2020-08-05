@@ -6,7 +6,7 @@ Clik <a href='https://iogsotot.github.io/Zippy/'>here</a> to watch live-demo ver
 * flex
 * in header - pure CSS slider
 * in section "Video" - video-slider JS + CSS (without any libraries)
-* pixel pefect
+* pixel perfect
 * non adaptive, only desktop version
 
 ## <a name="ru">Лэндинг</a>   
@@ -15,4 +15,4 @@ Clik <a href='https://iogsotot.github.io/Zippy/'>here</a> to watch live-demo ver
 * в header - pure CSS слайдер
 * в разделе "Видео" - видео-слайдер на JS + CSS (самописный, не использует какие-либо библиотеки)
 * не адаптивный
-* pixel pefect
+* pixel perfect
