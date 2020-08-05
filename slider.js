@@ -47,21 +47,16 @@ const videos = document.querySelectorAll('video');
 let playBtnAreas = document.querySelectorAll('.video .slider__item');
 let showcases = document.querySelectorAll('.video .showcase');
 
-for (let i = 0; i < playBtnAreas.length; i++) {
-    playBtnAreas[i].onclick = function () {
+
+
+  for (let i = 0; i < playBtnAreas.length; i++) {
+    playBtnAreas[i].onclick = function playPause() { 
         showcases[i].classList.add('none'); 
         videos[i].setAttribute('controls', true);
-        if (videos[i].paused) {
-            videos[i].play();
-        } else if (videos[i].play) {
-            videos[i].pause();
+        if (videos[i].paused) 
+          videos[i].play(); 
+        else {
+          videos[i].pause(); 
         }
-    }
-}
-
-
-
-
-
-
-
+      } 
+  }
